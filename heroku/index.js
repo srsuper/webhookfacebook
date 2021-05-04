@@ -17,7 +17,7 @@ app.listen(app.get('port'));
 app.use(xhub({ algorithm: 'sha1', secret: process.env.APP_SECRET }));
 app.use(bodyParser.json());
 
-var token = process.env.TOKEN || 'token';
+var token = process.env.TOKEN || 'PNCK';
 var received_updates = [];
 
 app.get('/', function(req, res) {
